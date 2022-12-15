@@ -34,7 +34,7 @@ func sort(a []int) []int {
 }
 
 func main() {
-	d := sort([]int{5, 2, 4, 9, 1})
+	d := sort([]int{5, 2, 0, 3, 1})
 	fmt.Println(d)
 
 }

@@ -15,7 +15,7 @@ func max(a []int) int {
 	}
 	return max
 }
-func sort(a []int) {
+func sort(a []int) []int {
 	n := len(a)
 	maxnumber := max(a)
 	//fmt.Println(maxnumber)
@@ -53,9 +53,11 @@ func sort(a []int) {
 		}
 
 	}
-	fmt.Println(a)
+	return a
 }
 
 func main() {
-	sort([]int{64, 250, 775, 947, 771, 28})
+	b :=[]int{64, 250, 775, 947, 771, 28}
+	a := sort(b)
+	fmt.Println(a)
 }
