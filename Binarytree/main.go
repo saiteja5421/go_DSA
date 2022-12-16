@@ -112,5 +112,7 @@ func main() {
 	fmt.Println()
 	fmt.Println("Number of Nodes :", t.count(t._root))
 	fmt.Println("Height of the Tree :", t.height(t._root)-1)
+	t.inorder(t._root)
+	
 
 }
