@@ -108,9 +108,7 @@ func main() {
 	t.postorder(t._root)
 	fmt.Println()
 	fmt.Println("Levelorder Traversal")
-	t.levelorder(t._root)
-
-	
+	t.levelorder(t._root)	
 	fmt.Println()
 	fmt.Println("Number of Nodes :", t.count(t._root))
 	fmt.Println("Height of the Tree :", t.height(t._root)-1)
