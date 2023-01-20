@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type heap struct {
-	data  [10]int
+	data  []int
 	csize int
 	hi    int
 }
