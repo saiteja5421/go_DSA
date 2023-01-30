@@ -122,6 +122,25 @@ func (t *binarysearchtree) postorder(troot *Node) {
 	}
 }
 
+func (t *binarysearchtree) levelorder(troot *Node) {
+	Q := []*Node{}
+	a := troot
+	fmt.Print(troot._element, " ")
+	Q = append(Q, a)
+	for len(Q) > 0 {
+		a = Q[0]
+		Q = Q[1:]
+		if a._left != nil {
+			fmt.Print(a._left._element, " ")
+			Q = append(Q, a._left)
+		}
+		if a._right != nil {
+			fmt.Print(a._right._element, " ")
+			Q = append(Q, a._right)
+		}
+	}
+}
+
 
 func (t *binarysearchtree)count(troot *Node) int {
       if troot != nil{
@@ -152,5 +171,6 @@ func main() {
 	fmt.Println()
 	b := x.count(x._root)
 	fmt.Println(b)
+	x.levelorder(x._root)
 	
 }
