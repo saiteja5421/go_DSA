@@ -19,18 +19,18 @@ func Sort(a []int) []int {
 func main() {
 	b := Sort([]int{5, 3, 2, 4, 1})
 	fmt.Println(b)
-	var t , i uint
-    t , i = 1 , 1
+	// var t , i uint
+    // t , i = 1 , 1
 
-    for i = 1 ; i < 10 ; i++ {
-        fmt.Printf("%d << %d = %d \n", t , i , t<<i)
-    }
+    // for i = 1 ; i < 10 ; i++ {
+    //     fmt.Printf("%d << %d = %d \n", t , i , t<<i)
+    // }
 
 
-    fmt.Println()
+    // fmt.Println()
 
-    t = 512
-    for i = 1 ; i < 10 ; i++ {
-        fmt.Printf("%d >> %d = %d \n", t , i , t>>i)
-	}
+    // t = 512
+    // for i = 1 ; i < 10 ; i++ {
+    //     fmt.Printf("%d >> %d = %d \n", t , i , t>>i)
+	// }
 }
